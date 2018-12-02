@@ -1,0 +1,82 @@
+body,p,img,figure,figcaption,h2{margin: 0;padding: 0;}
+figure{position: relative;width: 33.33%;height: 350px;overflow: hidden;float: left;}
+figcaption{position: absolute;top: 0;left: 0;color: #fff;}
+@media screen and (max-width: 600px){
+	figure{width: 100%;}
+}
+@media screen and (min-width: 601px) and (max-width: 1000px){
+	figure{width: 50%;}
+}
+@media screen and (min-width: 1001px){
+	figure{width: 33.33%;}
+}
+
+figure img{opacity: 0.8;transition:all 0.35s;}
+figure figcaption p,h2,span,div{transition:all 0.35s;}
+.text1{background: #030;}
+.text1 figcaption p{background: #fff;color: #333;margin: 3px;text-align: center;
+	transform:translate(-420px,0px);}
+.text1 figcaption p:nth-of-type(1){transition-delay:0.05s;}/* 同级的相同元素的P标签 */
+.text1 figcaption p:nth-of-type(2){transition-delay:0.1s;}
+.text1 figcaption p:nth-of-type(3){transition-delay:0.15s;}
+.text1 figcaption{padding: 20px;}
+.text1:hover figcaption p{transform:translate(0,0);}
+.text1:hover img{transform:translate(-50px,0px);opacity: 0.5;}
+
+.text2{background: #030;}
+.text2 figcaption{width: 100%;height: 100%;}
+.text2 figcaption div{border: 2px solid #fff;width: 80%;height: 80%;position: absolute;top:10%;
+	left: 10%;transform:translate(0,-360px) rotate(0deg);}
+.text2 figcaption h2{margin: 15% 0 0 15%;}
+.text2 figcaption p{margin-left: 15%;transform:translate(0,50px);opacity: 0;}
+.text2:hover figcaption div{transform:translate(0,0) rotate(360deg);}
+.text2:hover img{opacity: 0.5;}
+.text2:hover figcaption p{transform:translate(0,0);opacity: 1;}
+
+.text3{background: #74AAD3;}
+.text3 figcaption{position: absolute;top: 30%;left: 15%;}
+.text3:hover img{opacity: 0.5;}
+.text3 figcaption h2{transform:skew(90deg);}
+.text3 figcaption p{transform:skew(90deg);transition-delay:0.2s;}
+.text3:hover figcaption h2{transform:skew(0deg);}
+.text3:hover figcaption p{transform:skew(0deg);}
+
+.text4{background: #EDCBBD;}
+.text4 figcaption{width: 100%;height: 100%;}
+.text4 figcaption div{border: 2px solid #fff;width: 80%;height: 80%;position: absolute;top:10%;
+	left: 10%;transform:scale(1.2,1.2);opacity: 0;}
+.text4 figcaption h2{top: 15%;left: 15%;position: absolute;opacity: 0;transform:scale(1.2,1.2);}
+.text4 figcaption p{top: 25%;left: 15%;position: absolute;opacity: 0;transform:scale(1.2,1.2);}
+.text4:hover figcaption div,.text4:hover figcaption h2,.text4:hover figcaption p{transform:scale(1,1);opacity: 1;}
+.text4:hover img{opacity: 0.5;transform:scale(1.2,1.2);}
+
+.text5{background: #74AAD3;}
+.text5 figcaption{width: 100%;height: 100%;}
+.text5 figcaption div{width: 80%;height: 80%;position: absolute;top:10%;
+	left: 10%;}
+.text5 figcaption .div1{border-top: 2px solid #fff;border-bottom: 2px solid #fff; transform:scale(1,0);opacity: 0;}
+.text5 figcaption .div2{border-left: 2px solid #fff;border-right: 2px solid #fff; transform:scale(0,1);opacity: 0;}
+.text5 figcaption h2{top: -20%;left: 40%;position: absolute;}
+.text5 figcaption p{top: -20%;left: 35%;position: absolute;}
+.text5:hover figcaption .div1{ transform:scale(1.2,1);opacity: 1;}
+.text5:hover figcaption .div2{ transform:scale(1,1.2);opacity: 1;}
+.text5:hover figcaption h2{transform:scale(1,1);opacity: 1;top: 35%;left: 40%;}
+.text5:hover figcaption p{transform:scale(1,1);opacity: 1;top: 45%;left: 35%;}
+.text5:hover img{opacity: 0.5;transform:scale(1.2,1.2);}
+
+.text6{background: #EDCBBD;}
+.text6 figcaption{width: 100%;height: 100%;}
+.text6 figcaption div{background:#fff;width: 100%;height: 60%;position: absolute;bottom:-60%;
+	left: 0%;transform:skew(0,0deg);opacity: 0; transform:origin:0 0; }
+.text6:hover figcaption div{transform:skew(0,-25deg);opacity: 0.8;transform-origin:left top;}
+.text6 figcaption h2{top: 15%;left: -40%;position: absolute;opacity: 0;transform:scale(1.2,1.2);}
+.text6 figcaption p{top: 25%;left: -35%;position: absolute;opacity: 0;transform:scale(1.2,1.2);}
+.text6:hover figcaption h2{transform:scale(1,1);opacity: 1;top: 25%;left: 40%;}
+.text6:hover figcaption p{transform:scale(1,1);opacity: 1;top: 35%;left: 35%;}
+.text6:hover img{opacity: 0.5;transform:scale(1.2,1.2);}
+
+
+
+
+
+
